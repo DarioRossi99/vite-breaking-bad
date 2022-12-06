@@ -16,12 +16,8 @@
 </script>
 
 <template>
-<div>
   <Header></Header>
-</div>
-<div class="container">
   <CharactersList></CharactersList>
-</div>
 </template>
 
 <style lang="scss">

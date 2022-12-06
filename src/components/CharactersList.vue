@@ -21,17 +21,24 @@ export default{
 </script>
 
 <template>
-    <div class="container">
-
-        <div class="row row-col-1 roe-col-md-4 g-4">
-            <div class="col" v-for="(singlecharacter, index) in charactersList" :key="index">
-                <SingleCharacter :character="singlecharacter"></SingleCharacter>
+    <section>
+        <div class="container">
+            <div class="row row-col-4 roe-col-md-6 g-4">
+                <div class="col" v-for="(singlecharacter, index) in charactersList" :key="index">
+                    <SingleCharacter :character="singlecharacter"></SingleCharacter>
+                </div>
             </div>
         </div>
-    </div>
-    
+    </section>
 </template>
 
 <style scoped lang="scss">
 
+section{
+    background-color: rgb(46, 58, 70);
+}
+.container{
+    padding: 3rem;
+    background-color: white;
+}
 </style>
