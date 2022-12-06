@@ -20,11 +20,15 @@ export default{
 
 <template>
     <div class="container">
-        <ul>
-            <li v-for="(character, index) in charactersList" :key="index">
-                {{character.name}}
-            </li>
-        </ul>
+        <div class="card" v-for="(character, index) in charactersList" :key="index">
+            <ul>
+                <li>
+                    {{character.name}}
+                    {{character.species}}
+                    {{character.gender}}
+                </li>
+            </ul>
+        </div>
     </div>
     
 </template>
