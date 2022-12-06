@@ -5,16 +5,20 @@
   import SingleCharacter from './components/SingleCharacter.vue';
 
   export default{
-    components: { Header,Main}
+    components: { Header,Main,CharactersList,SingleCharacter}
   }
   import 'bootstrap/dist/css/bootstrap.min.css'
 </script>
 
 <template>
+<div>
   <Header></Header>
-  <Main></Main>
+</div>
+<div class="container">
+  <CharactersList></CharactersList>
+</div>
 </template>
 
 <style lang="scss">
-
+  @use "../styles/general.scss" as * ;
 </style>

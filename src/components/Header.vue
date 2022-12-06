@@ -1,15 +1,13 @@
 <script>
 
 export default{
-    props:{
-        
-    }
+
 };
 </script>
 
 <template>
   <section>
-
+    <h1>esercizio di merda</h1>
   </section>
 </template>
 
