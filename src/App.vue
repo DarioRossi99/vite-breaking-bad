@@ -5,7 +5,12 @@
   import SingleCharacter from './components/SingleCharacter.vue';
 
   export default{
-    components: { Header,Main,CharactersList,SingleCharacter}
+    components: { Header,Main,CharactersList,SingleCharacter},
+    data() {
+      return {
+        
+      }
+    },
   }
   import 'bootstrap/dist/css/bootstrap.min.css'
 </script>

@@ -7,7 +7,9 @@ export default{
 
 <template>
   <section>
-    <h1>esercizio di merda</h1>
+    <div class="container">
+      <h1>esercizio di merda</h1>
+    </div>
   </section>
 </template>
 

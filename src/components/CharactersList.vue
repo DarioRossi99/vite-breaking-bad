@@ -12,7 +12,7 @@ export default{
     created() {
         axios.get("https://rickandmortyapi.com/api/character")
         .then(resp =>{
-            this.characterList = resp.data.results;
+            this.charactersList = resp.data.results;
         });
     },
 };
