@@ -6,10 +6,13 @@ export default{
         /**
          * @property {string} name
          * @property {string} gender
-         * @property {string} species
          * @property {string} status
+         * @property {string} species
          */
-        character: Ogject,
+        character: {
+            type: Object,
+            required:true
+        }
     },
     data() {
         return {

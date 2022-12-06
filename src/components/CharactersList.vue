@@ -1,8 +1,10 @@
 <script>
 import axios from "axios";
+import SingleCharacter from './SingleCharacter.vue';
 
 export default{
     name: "CharacterList",
+    components:{SingleCharacter},
     props:{},
     data() {
         return {
@@ -20,13 +22,12 @@ export default{
 
 <template>
     <div class="container">
-        <ul>
-            <li v-for="(character, index) in charactersList" :key="index">
-                {{character.name}}
-                {{character.species}}
-                {{character.gender}}
-            </li>
-        </ul>
+
+        <div class="row row-col-1 roe-col-md-4 g-4">
+            <div class="col" v-for="(singlecharacter, index) in charactersList" :key="index">
+                <SingleCharacter :character="singlecharacter"></SingleCharacter>
+            </div>
+        </div>
     </div>
     
 </template>
