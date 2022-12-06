@@ -4,6 +4,7 @@
   import CharactersList from './components/CharactersList.vue';
   import SingleCharacter from './components/SingleCharacter.vue';
 
+
   export default{
     components: { Header,Main,CharactersList,SingleCharacter},
     data() {

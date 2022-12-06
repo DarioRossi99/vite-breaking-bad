@@ -8,7 +8,7 @@ export default{
     props:{},
     data() {
         return {
-            charactersList:[]
+            charactersList:[],
         };
     },
     created() {

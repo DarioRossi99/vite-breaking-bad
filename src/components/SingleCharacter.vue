@@ -8,6 +8,7 @@ export default{
          * @property {string} gender
          * @property {string} status
          * @property {string} species
+         * @property {stringe} id
          */
         character: {
             type: Object,
