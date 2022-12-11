@@ -12,13 +12,20 @@
         
       }
     },
+    methods: {
+      onSearch(filtersSearch){
+        this.CharactersList = filtersSearch
+        
+        console.log(filtersSearch);
+      }
+    },
   }
   import 'bootstrap/dist/css/bootstrap.min.css'
 </script>
 
 <template>
   <Header></Header>
-  <CharactersList></CharactersList>
+  <CharactersList @search="onSearch"></CharactersList>
 </template>
 
 <style lang="scss">
