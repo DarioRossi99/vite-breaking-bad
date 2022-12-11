@@ -30,7 +30,7 @@ export default{
     <div class="card">
         <img class="imagini card-img-top" :src="character.image" :alt="('Card image di' + character.name)" >
         <div class="card-body">
-        <h5 class="card-title">{{character.name}}</h5>
+        <h5 class="card-title py-2">{{character.name}}</h5>
         <p class="card-text">{{character.gender}}</p>
         <p class="card-text">{{character.species}}</p>
         <p class="card-text">{{character.status}}</p>

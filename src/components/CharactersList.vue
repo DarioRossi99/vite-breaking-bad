@@ -9,6 +9,11 @@ export default{
     data() {
         return {
             charactersList:[],
+            filters:{
+                gender:"",
+                species:"",
+                status:"",
+            }
         };
     },
     created() {
@@ -17,10 +22,45 @@ export default{
             this.charactersList = resp.data.results;
         });
     },
+    methods: {
+        onSearchClick(){
+            
+        }
+    },
 };
 </script>
 
 <template>
+    <section>
+        <div class="container">
+            <form action="" class="mb-4" @submit.prevent="onSearchClick">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="space">Gender</label>
+                            <input type="text" class="from-control" name="gender" v-model="filters.gender">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="space">Species</label>
+                            <input type="text" class="from-control" name="species" v-model="filters.species">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="space">Status</label>
+                            <input type="text" class="from-control" name="status" v-model="filters.status">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex gap-3 justify-content-center">
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                    <button class="btn btn-info">Filtra</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <section>
         <div class="container">
             <div class="row row-col-4 roe-col-md-6 g-4">
@@ -36,6 +76,16 @@ export default{
 
 section{
     background-color: rgb(46, 58, 70);
+}
+.space{
+    padding-right: 1rem;
+}
+.row{
+    justify-content: center;
+}
+
+.col-sm-6{
+    width: 25%;
 }
 .container{
     padding: 3rem;
