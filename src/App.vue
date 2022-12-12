@@ -9,12 +9,12 @@
     components: { Header,Main,CharactersList,SingleCharacter},
     data() {
       return {
-        
+        filtersSearch:{},
       }
     },
     methods: {
       onSearch(filtersSearch){
-        this.CharactersList = filtersSearch
+        this.filtersSearch = filtersSearch
         
         console.log(filtersSearch);
       }

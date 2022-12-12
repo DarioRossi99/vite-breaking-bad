@@ -26,6 +26,11 @@ export default{
     methods: {
         onSearchClick(){
             this.$emit("search", this.filters);
+
+            axios.get("https://rickandmortyapi.com/api/character" , {params: this.filters})
+            .then(resp =>{
+            this.charactersList = resp.data.results;
+        });
         }
     },
 };
